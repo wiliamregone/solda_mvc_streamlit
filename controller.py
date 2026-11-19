@@ -32,7 +32,7 @@ class SoldaController:
             with Image.open(BytesIO(dados_imagem)) as original:
                 if original.format not in {"JPEG", "PNG"}:
                     raise ValueError(
-                        "Utilize uma imagem JPEG ou PNG."
+                        "Utilize uma imagem JPG, JPEG ou PNG."
                     )
 
                 largura, altura = original.size
